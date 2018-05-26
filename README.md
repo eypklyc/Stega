@@ -69,7 +69,7 @@ C:\stega>stega -d -o o2.bmp -c o.bmp
   De-embedding finished in 15 milliseconds.
 
 C:\stega>stega -t o2.bmp cat.bmp
-  The images are *%100* same.
+  The images are %100 same.
 
 C:\stega>stega -e -o o.bmp -c grassb.bmp -s tiger.bmp -v -p
   Images successfully readed.
@@ -94,17 +94,17 @@ C:\stega>stega -e -o o.bmp -c grassb.bmp -s tiger.bmp -v -p
 C:\stega>stega -d -o o2.bmp -c o.bmp -v
   Image successfully readed.
   Pixel per digit: 877
-  Modulo: *1755*
+  Modulo: 1755
   Block size: 1
   Secret image resolution: 275 x 183
-  Cover image resolution: *7680 x 5748*
+  Cover image resolution: 7680 x 5748
 
   De-embedding started....
   De-embedding secret image is finished.
   De-embedding finished in 890 milliseconds.
 
 C:\stega>stega -t o2.bmp tiger.bmp
-  The images are *%100* same.
+  The images are %100 same.
 ```
 
 ## References
