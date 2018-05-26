@@ -58,40 +58,53 @@ Usage
 
 ## Example
 ```
-C:\stega>stega -e -o o.bmp -c grass.bmp -s cat.bmp -v -p
-  Images successfully readed.
-  Optimum pixel per digit: 3
-  Modulo: 7
-  Block size: 3
-  Secret image resolution: 160 x 121
-  Cover image resolution: 512 x 384
+C:\stega>stega -e -o o.bmp -c grass.bmp -s cat.bmp
 
   Embedding started....
-  Embedding secret image is finished. %88.6281 of the cover image was used.
+  Embedding finished in: 24 milliseconds.
 
-        *Embedding efficiency: 3.27525
-        *Embedding rate: 0.935785
-        *PSNR: 54.0746 dB (in RGB)
-                *PSNR: 54.0868 dB (in red)
-                *PSNR: 54.0762 dB (in green)
-                *PSNR: 54.0609 dB (in blue)
+C:\stega>stega -d -o o2.bmp -c o.bmp
 
-  Embedding finished in: 45 milliseconds.
+  De-embedding started....
+  De-embedding finished in 15 milliseconds.
+
+C:\stega>stega -t o2.bmp cat.bmp
+  The images are *%100* same.
+
+C:\stega>stega -e -o o.bmp -c grassb.bmp -s tiger.bmp -v -p
+  Images successfully readed.
+  Optimum pixel per digit: 877
+  Modulo: 1755
+  Block size: 1
+  Secret image resolution: 275 x 183
+  Cover image resolution: 7680 x 5748
+
+  Embedding started....
+  Embedding secret image is finished. %99.9782 of the cover image was used.
+
+        *Embedding efficiency: 10.7834
+        *Embedding rate: 0.0122888
+        *PSNR: 77.5624 dB (in RGB)
+                *PSNR: 77.5622 dB (in red)
+                *PSNR: 77.5652 dB (in green)
+                *PSNR: 77.5598 dB (in blue)
+
+  Embedding finished in: 2434 milliseconds.
 
 C:\stega>stega -d -o o2.bmp -c o.bmp -v
   Image successfully readed.
-  Pixel per digit: 3
-  Modulo: 7
-  Block size: 3
-  Secret image resolution: 160 x 121
-  Cover image resolution: 512 x 384
+  Pixel per digit: 877
+  Modulo: *1755*
+  Block size: 1
+  Secret image resolution: 275 x 183
+  Cover image resolution: *7680 x 5748*
 
   De-embedding started....
   De-embedding secret image is finished.
-  De-embedding finished in 24 milliseconds.
+  De-embedding finished in 890 milliseconds.
 
-C:\stega>stega -t o2.bmp cat.bmp
-  The images are %100 same. 
+C:\stega>stega -t o2.bmp tiger.bmp
+  The images are *%100* same.
 ```
 
 ## References
