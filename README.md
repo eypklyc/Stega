@@ -8,6 +8,8 @@ Authors: Eyüp E. Kalaycı, Leyla Albayrak
 
 Computer Engineering, Karadeniz Technical University
 
+## Features
+
 * Decision mechanism for best embedding efficiency
 * 3124 x 3124 max secret image size
 * Option for pixel-per-digit setting
