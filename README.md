@@ -6,7 +6,7 @@ The project assignment was carried out in the scope of the course Network and Da
 
 Authors: Eyüp E. Kalaycı, Leyla Albayrak
 
-Computer Engineering, Karadeniz Technical University
+Karadeniz Technical University, Computer Engineering
 
 ## Features
 
